@@ -61,6 +61,7 @@ section:nth-child(even) {
     color: var(--green);
     cursor: pointer;
     font-size: 1.8rem;
+    background: #fff;
 }
 
 .btn span {
@@ -335,15 +336,215 @@ section:nth-child(even) {
     box-shadow: var(--box-shadow);
 }
 
+.book .row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.book .row .image {
+    flex-direction: 1 1 45rem;
+}
+
+.book .row .image img {
+    width: 100%;
+}
+
+.book .row form {
+    flex: 1 1 45rem;
+    background: #fff;
+    border: var(--border);
+    box-shadow: var(--box-shadow);
+    text-align: center;
+    padding: 2rem;
+    border-radius: .5rem;
+}
+
+.book .row form h3 {
+    color: var(--black);
+    padding-top: 1rem;
+    font-size: 3rem;
+}
+
+.book .row form .box {
+    width: 100%;
+    margin: .7rem 0;
+    border-radius: .5rem;
+    border: var(--border);
+    font-size: 1.6rem;
+    color: var(--black);
+    text-transform: none;
+    padding: 1rem;
+}
+
+.book .row form .btn {
+    padding: 1rem 5rem;
+}
+
+.review .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem;
+}
+
+.review .box-container .box {
+    border: var(--border);
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+    padding: 2.5rem;
+    background: #fff;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.review .box-container .box img {
+    height: 10rem;
+    border: .3rem solid #fff;
+    margin-top: 1rem;
+    /* margin-bottom: 1rem; */
+    border-radius: 50%;
+    width: 10rem;
+    object-fit: cover;
+}
+
+.review .box-container .box h3 {
+    color: #fff;
+    font-size: 2.2rem;
+    padding: .5rem 0;
+}
+
+.review .box-container .box .stars i {
+    font-size: 1.1rem;
+    color: #fff;
+}
+
+.review .box-container .box .text {
+    color: var(--light-color);
+    font-size: 1.5rem;
+    line-height: 1.8;
+    padding-top: 2rem;
+}
+
+.review .box-container .box::before {
+    content: '';
+    position: absolute;
+    top: -4rem; left: 50%;
+    transform: translate(-50%);
+    background: var(--green);
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    height: 25rem;
+    width: 120%;
+    z-index: -1;
+}
+
+.blogs .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem;
+}
+
+.blogs .box-container .box {
+    border: var(--border);
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+    padding: 2rem;
+}
+
+.blogs .box-container .box .image {
+    height: 20rem;
+    overflow: hidden;
+    border-radius: .5rem;
+}
+
+.blogs .box-container .box .image img {
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.blogs .box-container .box:hover .image img {
+    transform: scale(1.2);
+}
+
+.blogs .box-container .box .content .icon {
+    padding-top: 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.blogs .box-container .box .content .icon a {
+    font-size: 1.4rem;
+    color: var(--light-color);
+}
+
+.blogs .box-container .box .content .icon a:hover {
+    color: var(--green);
+}
+
+.blogs .box-container .box .content .icon a i {
+    padding-right: .5rem;
+    color: var(--green);
+}
+
+.blogs .box-container .box .content h3 {
+    color: var(--black);
+    font-size: 3rem;
+}
+
+.blogs .box-container .box .content p {
+    color: var(--light-color);
+    font-size: 1.5rem;
+    line-height: 1.8;
+    padding: 1rem 0;
+}
+
+.footer .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+    gap: 2rem;
+}
+
+.footer .box-container .box h3 {
+    font-size: 2.5rem;
+    color: var(--black);
+    padding: 1rem 0;
+}
+
+.footer .box-container .box a {
+    display: block;
+    font-size: 1.5rem;
+    color: var(--light-color);
+    padding: 1rem 0;
+}
 
 
+.footer .box-container .box a i {
+    padding-right: .5rem;
+    color: var(--green);
+}
 
+.footer .box-container .box a:hover i {
+    padding-right: 2rem;
+}
 
-
-
-
-
-
+.footer .credit {
+    padding: 1rem;
+    padding-top: 2rem;
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 2rem;
+    color: var(--light-color);
+    border-top: .1rem solid rgba(0, 0, 0, .1);
+}
+.footer .credit span {
+    color: var(--green);
+}
 
 
 
