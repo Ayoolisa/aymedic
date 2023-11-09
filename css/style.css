@@ -607,7 +607,7 @@ border-radius: 20px;
         border-radius: .5rem;
         box-shadow: var(--box-shadow);
         width: 30rem;
-        height: calc(100vh  - 9.5rem);
+        height: calc(100vh  - 15.5rem);
         background: #fff;
         border: var(--border);
         transform: scale(0);
